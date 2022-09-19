@@ -1,0 +1,27 @@
+h1{
+ color: #42515F;
+ font-weight: bold;
+}
+table{
+  display: block;
+  margin: auto;
+  padding: auto;
+  width:max-content;
+}
+th{
+  top: 255px;
+  left: 246px;
+  width: 100px;
+  height: 22px;
+  /* UI Properties */
+  opacity: 1;
+}
+td{
+  top: 285px;
+left: 188px;
+width: 100px;
+height: 65px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-bottom: 1px solid #E3E3E3;
+opacity: 1;
+}

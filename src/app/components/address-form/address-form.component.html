@@ -1,0 +1,62 @@
+<app-header></app-header>
+<mat-card>
+  <mat-card-title> Personal Address Form </mat-card-title>
+  <mat-card-content>
+    <form (submit)="onSubmitHandler()" [formGroup]="address_form">
+      <mat-label for="name">First Name</mat-label><br>
+      <input type="text" formControlName="firstName" id="" />
+      <br>
+      <br>
+      <mat-label for="name">Last Name</mat-label><br>
+      <input type="text" formControlName="lastName" id="" />
+      <br>
+      <br>
+      <mat-label for="phone_number">Phone Number</mat-label><br>
+      <input type="number" formControlName="mobileNo" id="" />
+      <br>
+      <br>
+      <mat-label for="email">Email ID</mat-label><br>
+      <input type="email" formControlName="emailId" id="" />
+      <br>
+      <br>
+      <mat-label for="address">Address</mat-label><br>
+      <input type="text" formControlName="address" id="" />
+      <br>
+      <br>
+      <div class="address">
+        <div class="state">
+          <mat-label for="state">State</mat-label><br>
+          <select name="state" id="state" formControlName="state">
+            <option>Choose a state</option>
+            <option *ngFor="let state of states">{{state}}</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <div class="city">
+          <mat-label for="city">City</mat-label><br>
+          <select name="city" id="city" formControlName="city">
+            <option>Choose a city</option>
+            <option *ngFor="let city of cities">{{city}}</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <div class="zip">
+          <mat-label for="zip_code">Zip Code</mat-label><br>
+          <input type="number" formControlName="zipNo" id="" />
+        </div>
+        <br>
+        <br>
+      </div>
+      <br>
+      <br>
+      <div class="buttons">
+        <button class="submit-button" type="submit">Add</button>
+        <button class="reset-button" (click)="resetForm()" type="reset">Reset</button>
+      </div>
+    </form>
+  </mat-card-content>
+
+
+</mat-card>

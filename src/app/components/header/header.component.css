@@ -1,0 +1,36 @@
+header {
+  background-color: white;
+  height: max-content;
+}
+
+span {
+  background-color: white;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  top: 32px;
+  left: 246px;
+  width: 102px;
+  height: 42px;
+  margin-top: 10px;
+  text-align: left;
+  font-size: larger;
+  font: normal normal bold 22px/25px Montserrat;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.header-image {
+  background-color: white;
+}
+.header-text-address{
+  color: #008CFF;
+}
